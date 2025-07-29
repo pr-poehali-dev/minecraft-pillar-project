@@ -46,20 +46,10 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="mb-12">
-            <img 
-              src="/img/2c88b5a4-8af9-47c1-8b1d-339b5130c487.jpg" 
-              alt="Город Пиллар" 
-              className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
-            />
-          </div>
 
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="">
-              <Icon name="MapPin" size={20} className="mr-2" />
-              Исследовать город
-            </Button>
-            <Button size="lg" variant="outline">
+
+          <div className="flex justify-center">
+            <Button size="lg" variant="outline" onClick={() => window.open('https://t.me/pillar_sl4', '_blank')}>
               <Icon name="Users" size={20} className="mr-2" />
               Присоединиться
             </Button>
@@ -262,44 +252,14 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
+          <div className="flex justify-center">
+            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer max-w-sm" onClick={() => window.open('https://t.me/pillar_sl4', '_blank')}>
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="MessageCircle" size={24} className="text-white" />
                 </div>
                 <h3 className="font-semibold text-white mb-2">Telegram</h3>
-                <p className="text-gray-400 text-sm">Основной чат сообщества</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Youtube" size={24} className="text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">YouTube</h3>
-                <p className="text-gray-400 text-sm">Видео с событий города</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Twitch" size={24} className="text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Twitch</h3>
-                <p className="text-gray-400 text-sm">Стримы событий</p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Users" size={24} className="text-white" />
-                </div>
-                <h3 className="font-semibold text-white mb-2">Discord</h3>
-                <p className="text-gray-400 text-sm">Голосовое общение</p>
+                <p className="text-gray-400 text-sm">Основной чат сообщества Пиллара</p>
               </CardContent>
             </Card>
           </div>
