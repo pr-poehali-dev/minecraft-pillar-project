@@ -6,24 +6,24 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-white">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-green-100 sticky top-0 z-50">
+      <header className="bg-white/80 backdrop-blur-sm border-b border-pink-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-pink-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">🏛️</span>
               </div>
               <h1 className="text-2xl font-bold text-gray-900">Пиллар</h1>
-              <Badge variant="outline" className="text-green-600 border-green-600">SvinLand4</Badge>
+              <Badge variant="outline" className="text-pink-600 border-pink-600">SvinLand4</Badge>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-green-600 transition-colors">Главная</a>
-              <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">О городе</a>
-              <a href="#olympics" className="text-gray-700 hover:text-green-600 transition-colors">Олимпиада</a>
-              <a href="#cube" className="text-gray-700 hover:text-green-600 transition-colors">Куб</a>
-              <a href="#contacts" className="text-gray-700 hover:text-green-600 transition-colors">Контакты</a>
+              <a href="#home" className="text-gray-700 hover:text-pink-600 transition-colors">Главная</a>
+              <a href="#about" className="text-gray-700 hover:text-pink-600 transition-colors">О городе</a>
+              <a href="#olympics" className="text-gray-700 hover:text-pink-600 transition-colors">Олимпиада</a>
+              <a href="#cube" className="text-gray-700 hover:text-pink-600 transition-colors">Куб</a>
+              <a href="#contacts" className="text-gray-700 hover:text-pink-600 transition-colors">Контакты</a>
             </nav>
             <Button variant="outline" className="md:hidden">
               <Icon name="Menu" size={20} />
@@ -38,7 +38,7 @@ const Index = () => {
           <div className="mb-8">
             <h2 className="text-5xl font-bold text-gray-900 mb-4">
               Добро пожаловать в 
-              <span className="text-green-600"> Пиллар</span>
+              <span className="text-pink-600"> Пиллар</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Современный онлайн-город в мире Minecraft на сервере SvinLand4. 
@@ -55,7 +55,7 @@ const Index = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+            <Button size="lg" className="">
               <Icon name="MapPin" size={20} className="mr-2" />
               Исследовать город
             </Button>
@@ -80,8 +80,8 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Building2" size={24} className="text-green-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Building2" size={24} className="text-pink-600" />
                 </div>
                 <CardTitle>Архитектура</CardTitle>
                 <CardDescription>
@@ -92,8 +92,8 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Users" size={24} className="text-green-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Users" size={24} className="text-pink-600" />
                 </div>
                 <CardTitle>Сообщество</CardTitle>
                 <CardDescription>
@@ -104,8 +104,8 @@ const Index = () => {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Icon name="Star" size={24} className="text-green-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                  <Icon name="Star" size={24} className="text-pink-600" />
                 </div>
                 <CardTitle>События</CardTitle>
                 <CardDescription>
@@ -118,7 +118,7 @@ const Index = () => {
       </section>
 
       {/* Olympics Section */}
-      <section id="olympics" className="py-20 px-4 bg-green-50">
+      <section id="olympics" className="py-20 px-4 bg-pink-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 mb-4">
@@ -134,13 +134,13 @@ const Index = () => {
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Icon name="Calendar" size={24} className="mr-2 text-green-600" />
+                  <Icon name="Calendar" size={24} className="mr-2 text-pink-600" />
                   Расписание событий
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                  <div className="flex justify-between items-center p-3 bg-pink-50 rounded-lg">
                     <span className="font-medium">Церемония открытия</span>
                     <Badge>15 августа</Badge>
                   </div>
@@ -152,7 +152,7 @@ const Index = () => {
                     <span className="font-medium">PvP турниры</span>
                     <Badge variant="outline">19-20 августа</Badge>
                   </div>
-                  <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                  <div className="flex justify-between items-center p-3 bg-pink-50 rounded-lg">
                     <span className="font-medium">Церемония закрытия</span>
                     <Badge>21 августа</Badge>
                   </div>
@@ -163,26 +163,26 @@ const Index = () => {
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Icon name="Trophy" size={24} className="mr-2 text-green-600" />
+                  <Icon name="Trophy" size={24} className="mr-2 text-pink-600" />
                   Дисциплины
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="text-center p-3 bg-green-50 rounded-lg">
-                    <Icon name="Hammer" size={20} className="mx-auto mb-2 text-green-600" />
+                  <div className="text-center p-3 bg-pink-50 rounded-lg">
+                    <Icon name="Hammer" size={20} className="mx-auto mb-2 text-pink-600" />
                     <span className="text-sm font-medium">Строительство</span>
                   </div>
-                  <div className="text-center p-3 bg-green-50 rounded-lg">
-                    <Icon name="Swords" size={20} className="mx-auto mb-2 text-green-600" />
+                  <div className="text-center p-3 bg-pink-50 rounded-lg">
+                    <Icon name="Swords" size={20} className="mx-auto mb-2 text-pink-600" />
                     <span className="text-sm font-medium">PvP</span>
                   </div>
-                  <div className="text-center p-3 bg-green-50 rounded-lg">
-                    <Icon name="Zap" size={20} className="mx-auto mb-2 text-green-600" />
+                  <div className="text-center p-3 bg-pink-50 rounded-lg">
+                    <Icon name="Zap" size={20} className="mx-auto mb-2 text-pink-600" />
                     <span className="text-sm font-medium">Паркур</span>
                   </div>
-                  <div className="text-center p-3 bg-green-50 rounded-lg">
-                    <Icon name="Target" size={20} className="mx-auto mb-2 text-green-600" />
+                  <div className="text-center p-3 bg-pink-50 rounded-lg">
+                    <Icon name="Target" size={20} className="mx-auto mb-2 text-pink-600" />
                     <span className="text-sm font-medium">Стрельба</span>
                   </div>
                 </div>
@@ -206,10 +206,10 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-gradient-to-br from-purple-50 to-blue-50">
+            <Card className="bg-gradient-to-br from-pink-50 to-rose-50">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Icon name="Music" size={24} className="mr-2 text-purple-600" />
+                  <Icon name="Music" size={24} className="mr-2 text-pink-600" />
                   Концерты
                 </CardTitle>
                 <CardDescription>
@@ -221,7 +221,7 @@ const Index = () => {
             <Card className="bg-gradient-to-br from-pink-50 to-purple-50">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Icon name="Mic" size={24} className="mr-2 text-pink-600" />
+                  <Icon name="Mic" size={24} className="mr-2 text-rose-600" />
                   Караоке
                 </CardTitle>
                 <CardDescription>
@@ -230,10 +230,10 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            <Card className="bg-gradient-to-br from-blue-50 to-green-50">
+            <Card className="bg-gradient-to-br from-gray-50 to-slate-50">
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  <Icon name="Radio" size={24} className="mr-2 text-blue-600" />
+                  <Icon name="Radio" size={24} className="mr-2 text-gray-600" />
                   DJ-сеты
                 </CardTitle>
                 <CardDescription>
@@ -244,7 +244,7 @@ const Index = () => {
           </div>
 
           <div className="mt-12 text-center">
-            <Button size="lg" variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50">
+            <Button size="lg" variant="outline" className="border-pink-600 text-pink-600 hover:bg-pink-50">
               <Icon name="Calendar" size={20} className="mr-2" />
               Посмотреть расписание
             </Button>
@@ -253,7 +253,7 @@ const Index = () => {
       </section>
 
       {/* Contacts & Social */}
-      <section id="contacts" className="py-20 px-4 bg-gray-900 text-white">
+      <section id="contacts" className="py-20 px-4 bg-black text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Связь с нами</h2>
@@ -263,7 +263,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors cursor-pointer">
+            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="MessageCircle" size={24} className="text-white" />
@@ -273,7 +273,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors cursor-pointer">
+            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Youtube" size={24} className="text-white" />
@@ -283,7 +283,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors cursor-pointer">
+            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Twitch" size={24} className="text-white" />
@@ -293,9 +293,9 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors cursor-pointer">
+            <Card className="bg-gray-900 border-gray-700 hover:bg-gray-800 transition-colors cursor-pointer">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon name="Users" size={24} className="text-white" />
                 </div>
                 <h3 className="font-semibold text-white mb-2">Discord</h3>
