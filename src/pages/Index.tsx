@@ -49,10 +49,33 @@ const Index = () => {
 
 
           <div className="flex justify-center">
-            <Button size="lg" variant="outline" onClick={() => window.open('https://t.me/pillar_sl4', '_blank')}>
-              <Icon name="Users" size={20} className="mr-2" />
-              Присоединиться
-            </Button>
+            <div className="relative group">
+              {/* Floating building animation */}
+              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:-translate-y-4 pointer-events-none">
+                <div className="relative">
+                  <img 
+                    src="/img/f2ba9cda-02ff-4311-bcf4-45cf72bfd411.jpg" 
+                    alt="Здание Пиллара" 
+                    className="w-16 h-20 object-contain drop-shadow-lg"
+                  />
+                  {/* Glow effect */}
+                  <div className="absolute inset-0 bg-pink-400 rounded-lg opacity-30 blur-md scale-110"></div>
+                </div>
+              </div>
+              
+              <Button 
+                size="lg" 
+                variant="outline" 
+                onClick={() => window.open('https://t.me/pillar_sl4', '_blank')}
+                className="relative overflow-hidden group-hover:shadow-lg group-hover:shadow-pink-200 transition-all duration-300 group-hover:border-pink-300 group-hover:bg-pink-50"
+              >
+                <Icon name="Users" size={20} className="mr-2 group-hover:text-pink-600 transition-colors" />
+                <span className="group-hover:text-pink-600 transition-colors">Присоединиться</span>
+                
+                {/* Button glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-rose-400 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
